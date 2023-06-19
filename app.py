@@ -32,7 +32,9 @@ if uploaded_file is not None:
     all_users.insert(0, 'overall')
     selected_user = st.sidebar.selectbox(
         'Select The User From Below', all_users)
-
+    
+    st.sidebar.write('\n')
+    st.sidebar.write("This year variable is used only for 'Year wise analysis' section.")
     year = st.sidebar.slider('Enter The Year, You Want to analysis', 2010, 2030)
     st.sidebar.write('\n')
     st.sidebar.write('\n')
